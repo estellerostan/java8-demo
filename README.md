@@ -1,9 +1,10 @@
 # java8-demo
 
-Basic demonstration of Java 8 stream and lambda features by implementing a REST Client using Unirest.
+Basic demonstration of Java 8 stream and lambda features by implementing a REST Client using Unirest.  
+You can find the relevant examples [here](https://github.com/estellerostan/java8-demo/blob/master/src/main/java/com/mbds/java8demo/LibraryBookClient.java).
 
 ## About the REST Web Service
-It was created for my Master's course "Web Services REST". The assignment is to implement the classic Library-Book example using the Grails framework.
+It was created for my Master's course "Web Services REST". The assignment is to implement the classic Library-Book example using the Grails framework.  
 
 To know more about the REST Web Service, go to: 
 [github.com/estellerostan/webservice]( https://github.com/estellerostan/webservice)
