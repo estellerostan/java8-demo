@@ -3,7 +3,7 @@
 Basic demonstration of Java 8 stream and lambda features by implementing a REST Client using Unirest.
 
 ## About the REST Web Service
-It was created for my Master's course "Web Services REST". The assignement is to implement the classic Library-Book example using the Grails framework.
+It was created for my Master's course "Web Services REST". The assignment is to implement the classic Library-Book example using the Grails framework.
 
 To know more about the REST Web Service, go to: 
 [github.com/estellerostan/webservice]( https://github.com/estellerostan/webservice)
@@ -17,4 +17,4 @@ This is an ongoing project, I have yet to do all of what I planned!
 Please come back later to see the full demo :relaxed:
 
 ### Why a REST Client? Why don't you just create dummy data for the demo?
-I like to see what I can do with a school assignement, giving it a purpose so it becomes more than just a project we do because we are told to is satisfying.
+I like to see what I can do with a school assignment, giving it a purpose so it becomes more than just a project we do because we are told to is satisfying.
