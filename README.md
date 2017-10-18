@@ -11,8 +11,10 @@ To know more about the REST Web Service, go to:
  ## About the REST Client
 After getting the REST Web Service responses about the books and libraries, we can implement functionalities like searching a book in a library, transferring books from one library to another, ... in a Java 8 style.
 
-### This is a Java 8 demo, why isn't there any java 8 features implemented?!
-I have yet to do it! come back later to see the full demo.
+### This is a Java 8 demo, why is there only a few java 8 features implemented?!
+This is an ongoing project, I have yet to do all of what I planned! 
+
+Please come back later to see the full demo :relaxed:
 
 ### Why a REST Client? Why don't you just create dummy data for the demo?
 I like to see what I can do with a school assignement, giving it a purpose so it becomes more than just a project we do because we are told to is satisfying.
