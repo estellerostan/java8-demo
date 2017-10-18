@@ -1,18 +1,37 @@
 package com.mbds.java8demo;
 
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class LibraryBookClient {
 
-	public static void main(String[] args) throws Exception {
-		HttpResponse<JsonNode> getResponse = Unirest.get("http://localhost:8080/bibliothequelivreservice/api/livre/1")
-				.header("accept", "application/json")
-				.asJson();
+	public static void main(String[] args) throws UnirestException {
+		BookImplUnirest restBook = new BookImplUnirest();
+		
+		// array as a source of the stream
+		Book[] books = restBook.getAllBooks();
+		
+		List<Book> b = restBook.getBooks();
+		
+		// all the books titles written by Victor Hugo
+		List<String> victorHugoBooks = Arrays.stream(books).
+				filter(it -> it.getAuthor().equals("Victor Hugo"))
+				.map(it -> it.getNom())
+				.collect(Collectors.toList());
+		
+		// all the books titles that start with the letter D
+		List<String> dBooks = b.stream()
+				.map(Book::getNom)
+				.filter(nom -> nom.startsWith("D"))
+				.collect(Collectors.toList());
 
-		System.out.println(getResponse.getBody());
-
-		System.out.println(new BookImplUnirest().getBook());
+		System.out.println(Arrays.toString(books));
+		System.out.println(b);
+		
+		System.out.println(victorHugoBooks);
+		System.out.println(dBooks);	
 	}
 }

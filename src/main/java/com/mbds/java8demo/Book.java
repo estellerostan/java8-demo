@@ -8,17 +8,18 @@ public class Book {
 	private String author;
 	private Date publicationDate;
 	private String isbn;
+	private Library library;
 
 	public Book() {
 		super();
 	}
 
-	public Book(Long id, String nom, String auteur, Date dateparution, String isbn) {
+	public Book(Long id, String nom, String auteur, Date dateParution, String isbn) {
 		super();
 		this.id = id;
 		this.name = nom;
 		this.author = auteur;
-		this.publicationDate = dateparution;
+		this.publicationDate = dateParution;
 		this.isbn = isbn;
 	}
 
@@ -55,8 +56,8 @@ public class Book {
 		return publicationDate;
 	}
 
-	public void setDateparution(Date dateparution) {
-		this.publicationDate = dateparution;
+	public void setDateParution(Date dateParution) {
+		this.publicationDate = dateParution;
 	}
 
 	public String getIsbn() {
@@ -64,7 +65,14 @@ public class Book {
 	}
 
 	public void setIsbn(String isbn) {
-		this.isbn = isbn;
+		this.isbn =isbn;
+	}
+	
+	public Library getLibrary() {
+		return library;
 	}
 
+	public void setBibliotheque(Library library) {
+		this.library = library;
+	}
 }
